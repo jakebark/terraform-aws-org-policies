@@ -1,4 +1,4 @@
-## AWS organization policies with terraform
+## terraform-aws-org-policies
 
 Deploy SCPs, RCPs, and other organizational policies with Terraform.
 
@@ -22,7 +22,7 @@ module "rcps" {
   source = "github.com/jakebark/aws-organization-policies-with-terraform"
   policy_type = "RESOURCE_CONTROL_POLICY"
   ou_map = {
-    "r-1xyz"           = ["rcp_root"] #root
+    "r-1xyz"           = ["root"] #root
   }
 }
 ```

@@ -15,7 +15,7 @@
             "Resource": "*",
             "Condition": {
                 "StringNotEqualsIfExists": {
-                    "aws:SourceOrgID": "<my-org-id>"
+                    "aws:SourceOrgID": "0-123a456b789c"
                 },
                 "Bool": {
                     "aws:PrincipalIsAWSService": "true"
