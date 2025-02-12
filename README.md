@@ -37,7 +37,7 @@ The above two module inputs would look like this:
 ```
 .
 ├── resource_control_policy
-│   └── rcp_root.json
+│   └── root.json
 ├── service_control_policy
 │   ├── allow_services.json
 │   ├── root.json
@@ -51,7 +51,7 @@ The above two module inputs would look like this:
 ```hcl
 module "scps" {
   ... 
-  policies_directory = "policies"
+  policies_directory = "policies/scps"
 }
 ```
 
